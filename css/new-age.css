@@ -369,6 +369,14 @@ section.contact ul.list-social li.social-google-plus a:hover {
   background-color: #d73925;
 }
 
+section.contact ul.list-social li.social-instagram a {
+  background-color: #833AB4;
+}
+
+section.contact ul.list-social li.social-instagram a:hover {
+  background-color: #C13584;
+}
+
 footer {
   padding: 25px 0;
   text-align: center;
