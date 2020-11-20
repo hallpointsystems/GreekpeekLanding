@@ -407,6 +407,11 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   background: linear-gradient(#fdcc52, #fdc539);
 }
 
+.bg-primary-teal {
+  background: #00a89d;
+  background: linear-gradient(#00a89d, #04b49e);
+}
+
 .text-primary {
   color: #fdcc52;
 }
