@@ -1,100 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
+    <title>Coming Soon - Greekpeek Mobile App</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-  <title>Coming Soon - Greekpeek Mobile App</title>
+    <!-- Custom fonts for this template -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/coming-soon.min.css" rel="stylesheet" />
+    <style>
+      #clockdiv {
+        font-family: sans-serif;
+        color: #fff;
+        display: inline-block;
+        font-weight: 100;
+        text-align: center;
+        font-size: 30px;
+      }
 
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+      #clockdiv > div {
+        padding: 10px;
+        border-radius: 3px;
+        background: #02867e;
+        display: inline-block;
+      }
 
-  <!-- Custom styles for this template -->
-  <link href="css/coming-soon.min.css" rel="stylesheet">
-  <style>
-  
-#clockdiv{
-	font-family: sans-serif;
-	color: #fff;
-	display: inline-block;
-	font-weight: 100;
-	text-align: center;
-	font-size: 30px;
-}
+      #clockdiv div > span {
+        padding: 15px;
+        border-radius: 3px;
+        background: #02baaf;
+        display: inline-block;
+      }
 
-#clockdiv > div{
-	padding: 10px;
-	border-radius: 3px;
-	background: #02867E;
-	display: inline-block;
-}
+      .smalltext {
+        padding-top: 5px;
+        font-size: 16px;
+      }
 
-#clockdiv div > span{
-	padding: 15px;
-	border-radius: 3px;
-	background: #02BAAF;
-	display: inline-block;
-}
+      .masthead {
+        z-index: 100 !important;
+        /* width: 30% !important; */
+      }
 
-.smalltext{
-	padding-top: 5px;
-	font-size: 16px;
-}
+      @media (min-width: 768px) {
+        .masthead {
+          z-index: 100 !important;
+          width: 30% !important;
+        }
+      }
 
+      .masthead .masthead-bg {
+        transform: none !important;
+      }
 
-  </style>
+      .overlay {
+        z-index: 80 !important;
+        opacity: 0.1 !important;
+      }
 
-</head>
+      body {
+        /* The image used */
+        background-image: url("img/bg1.jpg");
 
-<body>
+        z-index: 790;
+        /* Full height */
+        /* height: 100%; */
 
-   <!-- The Modal -->
-   <div class="modal fade" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Thank you!</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        /* Center and scale the image nicely */
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Thank you!</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Thank you for signing up! Check your email for updates to know when
+            our new app is released and when our site launches!
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div>
         </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          Thank you for signing up! Check your email for updates to know when our new app is released and when our site launches!
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-        
       </div>
     </div>
-  </div>
 
-  <div class="overlay"></div>
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <!-- <div class="overlay"></div> -->
+    <!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
     <source src="mp4/bg.mp4" type="video/mp4">
-  </video>
+  </video> -->
 
-  <div class="masthead">
-    <div class="masthead-bg"></div>
-    <div class="container h-100">
-      <div class="row h-100">
-        <div class="col-12 my-auto">
-          <div class="masthead-content text-white py-5 py-md-0">
-            <!--<h2 id="demo"></h2>-->
-            <!-- <div id="clockdiv">
+    <div class="masthead">
+      <div class="masthead-bg"></div>
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 my-auto">
+            <div class="masthead-content text-white py-5 py-md-0">
+              <!--<h2 id="demo"></h2>-->
+              <!-- <div id="clockdiv">
               <div>
                 <span class="days"></span>
                 <div class="smalltext">Days</div>
@@ -112,27 +156,41 @@
                 <div class="smalltext">Seconds</div>
               </div>
             </div> -->
-            
-            <br/><br/>
-            <h1 class="mb-3">The next big app is coming soon for greeks!</h1>
-            <p class="mb-5">We're working hard to finish the development of our new app. Our target launch date is
-              <strong>May 2020</strong>! Sign up for updates using the form below!</p>
+
+              <br /><br />
+              <h1 class="mb-3">Greeks Get Ready!</h1>
+              <p class="mb-5">
+                We're about to release the best mobile app for Greeks to connect
+                around the world <strong>this month</strong>! Sign up below to
+                be the first to try it out!
+              </p>
 
               <form id="canvasF" action="" method="post">
-              <div class="input-group input-group-newsletter">
-              <input type="email" class="form-control" required name="email" id="email" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon">
-              <div class="input-group-append">
-                <button class="btn btn-secondary" type="submit">Notify Me!</button>
-              </div>
-            </div>
+                <div class="input-group input-group-newsletter">
+                  <input
+                    type="email"
+                    class="form-control"
+                    required
+                    name="email"
+                    id="email"
+                    placeholder="Enter email..."
+                    aria-label="Enter email..."
+                    aria-describedby="basic-addon"
+                  />
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary" type="submit">
+                      Notify Me!
+                    </button>
+                  </div>
+                </div>
               </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!--
+    <!--
   <div class="social-icons">
     <ul class="list-unstyled text-center mb-0">
       <li class="list-unstyled-item">
@@ -154,87 +212,83 @@
   </div>
 -->
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/coming-soon.min.js"></script>
-  <script>
+    <!-- Custom scripts for this template -->
+    <script src="js/coming-soon.min.js"></script>
+    <script>
+      $(function () {
+        // Set up an event listener for the contact form.
+        $("#canvasF").submit(function (event) {
+          // Stop the browser from submitting the form.
+          event.preventDefault();
 
-$(function() {
-    
+          // TODO
 
-// Set up an event listener for the contact form.
-$("#canvasF").submit(function(event) {
-    // Stop the browser from submitting the form.
-    event.preventDefault();
-
-    // TODO
-
-    var element = document.getElementById('email').value;
-    var forms = { "Email": element}
-    $.ajax({
+          var element = document.getElementById("email").value;
+          var forms = { Email: element };
+          $.ajax({
             type: "post",
-            url: "https://greekpeekapi.azurewebsites.net/api/Prerollment/EnrollForUpdate",
+            url:
+              "https://greekpeekapi.azurewebsites.net/api/Prerollment/EnrollForUpdate",
             data: JSON.stringify(forms),
             contentType: "application/json",
-            success: function(responseData, textStatus, jqXHR) {
-              $('#myModal').modal('show');
+            success: function (responseData, textStatus, jqXHR) {
+              $("#myModal").modal("show");
             },
-            error: function(jqXHR, textStatus, errorThrown) {
-                console.log(errorThrown);
-            }
-        })
-});
-
-});
-  
-  </script>
-    <script>
-    function getTimeRemaining(endtime) {
-  var t = Date.parse(endtime) - Date.parse(new Date());
-  var seconds = Math.floor((t / 1000) % 60);
-  var minutes = Math.floor((t / 1000 / 60) % 60);
-  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
-  return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
-}
-
-function initializeClock(id, endtime) {
-  var clock = document.getElementById(id);
-  var daysSpan = clock.querySelector('.days');
-  var hoursSpan = clock.querySelector('.hours');
-  var minutesSpan = clock.querySelector('.minutes');
-  var secondsSpan = clock.querySelector('.seconds');
-
-  function updateClock() {
-    var t = getTimeRemaining(endtime);
-
-    daysSpan.innerHTML = t.days;
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-    if (t.total <= 0) {
-      clearInterval(timeinterval);
-    }
-  }
-
-  updateClock();
-  var timeinterval = setInterval(updateClock, 1000);
-}
-
-var deadline = new Date(Date.parse(new Date(2020,2,15,0,0,0,0)) + 0 * 24 * 60 * 60 * 1000);
-//initializeClock('clockdiv', deadline);
+            error: function (jqXHR, textStatus, errorThrown) {
+              console.log(errorThrown);
+            },
+          });
+        });
+      });
     </script>
+    <script>
+      function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var seconds = Math.floor((t / 1000) % 60);
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+          total: t,
+          days: days,
+          hours: hours,
+          minutes: minutes,
+          seconds: seconds,
+        };
+      }
 
-</body>
+      function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        var daysSpan = clock.querySelector(".days");
+        var hoursSpan = clock.querySelector(".hours");
+        var minutesSpan = clock.querySelector(".minutes");
+        var secondsSpan = clock.querySelector(".seconds");
 
+        function updateClock() {
+          var t = getTimeRemaining(endtime);
+
+          daysSpan.innerHTML = t.days;
+          hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
+          minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
+          secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
+
+          if (t.total <= 0) {
+            clearInterval(timeinterval);
+          }
+        }
+
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+      }
+
+      var deadline = new Date(
+        Date.parse(new Date(2020, 2, 15, 0, 0, 0, 0)) + 0 * 24 * 60 * 60 * 1000
+      );
+      //initializeClock('clockdiv', deadline);
+    </script>
+  </body>
 </html>
